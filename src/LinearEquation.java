@@ -63,7 +63,7 @@ public class LinearEquation {
 
 
 
-        String dec =
+       // String dec =
         return slope() + "x + " + yIntercept();
     }
 
@@ -71,7 +71,9 @@ public class LinearEquation {
     /* Returns a String of the coordinate point on the line that has the given x value, with
        both x and y coordinates as decimals to the nearest hundredth, e.g (-5.0, 6.75) */
     public String coordinateForX(double xValue) {
-        return "";
+
+        double y = (slope()*xValue)+yIntercept();
+        return "("+xValue+", "+y+")";
     }
 
 
@@ -98,6 +100,6 @@ public class LinearEquation {
 
       */
     public String lineInfo() {
-        return "";
+        return "The two points are: ("+x1+", "+;
     }
 }
