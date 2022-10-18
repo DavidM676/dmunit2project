@@ -20,17 +20,14 @@ public class LinearEquation {
     }
 
 
-
     public double distance() {
         return roundedToHundredth(Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2)));
     }
 
 
-
     public double yIntercept() {
         return y1 - (slope() * x1);
     }
-
 
 
     public double slope() {
@@ -45,12 +42,12 @@ public class LinearEquation {
         double dec = slope() % 1;
         String addSub = "+ ";
         double yint = yIntercept();
-        String yintStr = ""+yIntercept();
+        String yintStr = "" + yIntercept();
 
-        if (yint<0) {
+        if (yint < 0) {
             addSub = "- ";
-            yintStr = ""+Math.abs(yint);
-        } else if (yint == 0)  {
+            yintStr = "" + Math.abs(yint);
+        } else if (yint == 0) {
             addSub = "";
             yintStr = "";
         }
@@ -58,7 +55,7 @@ public class LinearEquation {
         if (dec == 0.0) { //if whole number
             int s = (int) slope();
             if (s == 0) {
-                return "y = " + (int)yIntercept();
+                return "y = " + (int) yIntercept();
             } else if (s == 1) {
                 return "y = x " + addSub + yintStr;
             } else if (s == -1) {
@@ -91,7 +88,6 @@ public class LinearEquation {
     }
 
 
-
     public String coordinateForX(double xValue) {
         if (!v) {
             double y = (slope() * xValue) + yIntercept();
@@ -103,11 +99,9 @@ public class LinearEquation {
     }
 
 
-
     public double roundedToHundredth(double toRound) {
         return Math.round(toRound * 100) / 100.0;
     }
-
 
 
     public String lineInfo() {
