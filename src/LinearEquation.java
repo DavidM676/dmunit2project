@@ -4,7 +4,6 @@ public class LinearEquation {
     private int x2;
     private int y2;
 
-    private boolean v = false;
 
     public LinearEquation(int x1, int y1, int x2, int y2) {
         this.x1 = x1;
@@ -12,11 +11,7 @@ public class LinearEquation {
         this.y1 = y1;
         this.y2 = y2;
 
-        if (x1 == x2) {
 
-            v = true;
-
-        }
     }
 
 
@@ -89,12 +84,9 @@ public class LinearEquation {
 
 
     public String coordinateForX(double xValue) {
-        if (!v) {
             double y = (slope() * xValue) + yIntercept();
             return "(" + xValue + ", " + y + ")";
-        } else {
-            return "";
-        }
+
 
     }
 
@@ -105,8 +97,6 @@ public class LinearEquation {
 
 
     public String lineInfo() {
-
-        if (!v) {
             String n = "\n";
 
             String l1 = "The two points are: (" + x1 + ", " + y1 + ") and (" + x2 + ", " + y2 + ")";
@@ -115,7 +105,5 @@ public class LinearEquation {
             String l4 = "The y-intercept of the line is: " + yIntercept();
             String l5 = "The distance between the two points is: " + distance();
             return l1 + n + l2 + n + l3 + n + l4 + n + l5 + n;
-        }
-        return "These points are on a vertical line: x = " + x1;
-    }
-}
+
+}}
