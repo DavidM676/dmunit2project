@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="684ac009-8c4f-4200-949a-6c02d71f46c0" name="Changes" comment="it works3">
-      <change beforePath="$PROJECT_DIR$/src/LinearEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LinearEquation.java" afterDir="false" />
-    </list>
+    <list default="true" id="684ac009-8c4f-4200-949a-6c02d71f46c0" name="Changes" comment="loop thing" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666110456092</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="value for x">
+      <created>1666281820287</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666281820287</updated>
+    </task>
+    <task id="LOCAL-00006" summary="loop thing">
+      <created>1666282019229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666282019229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +125,8 @@
     <MESSAGE value="it works" />
     <MESSAGE value="it works2" />
     <MESSAGE value="it works3" />
-    <option name="LAST_COMMIT_MESSAGE" value="it works3" />
+    <MESSAGE value="value for x" />
+    <MESSAGE value="loop thing" />
+    <option name="LAST_COMMIT_MESSAGE" value="loop thing" />
   </component>
 </project>
