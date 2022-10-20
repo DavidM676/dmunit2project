@@ -85,7 +85,7 @@ public class LinearEquation {
 
     public String coordinateForX(double xValue) {
             double y = (slope() * xValue) + yIntercept();
-            return "(" + xValue + ", " + y + ")";
+            return "(" + roundedToHundredth(xValue) + ", " + roundedToHundredth(y) + ")";
 
 
     }
