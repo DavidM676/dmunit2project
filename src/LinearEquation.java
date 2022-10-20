@@ -60,22 +60,17 @@ public class LinearEquation {
             }
 
         } else {
-            boolean x = true;
             double n = slope();
             double firstN = n;
             int d = 1;
-            while (x) {
+            do {
 
                 n += firstN;
                 n = roundedToHundredth(n);
                 d += 1;
 
 
-                if ((n % 1) == 0) {
-                    x = false;
-                    break;
-                }
-            }
+            } while ((n % 1) != 0);
 
             return "y = " + (int) n + "/" + d + "x " + addSub + yintStr;
         }
